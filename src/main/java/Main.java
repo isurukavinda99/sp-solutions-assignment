@@ -33,6 +33,8 @@ public class Main {
 
         while(iterations < 3){
             sum += numberList.get(iterations);
+
+            iterations++;
         }
 
         return sum;
@@ -40,8 +42,7 @@ public class Main {
 
     // using recursion
     public int sumByRec(List<Integer> numberList){
-        int sum = numberList.stream().mapToInt(Integer::intValue).sum();
-        return sum;
+        return  numberList.stream().mapToInt(Integer::intValue).sum();
     }
 
 
